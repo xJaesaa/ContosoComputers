@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Register | AT1 - Jaesa Maxwell</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="images/favicon.png">
+    <script src="scripts.js"></script>
+    <script src="https://kit.fontawesome.com/bc5126d01f.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<header>
+    <a href="index.html"><img src="images/logo.png" alt="mobile logo" id="mobileLogo"><img src="images/logo2.png" alt="pc logo" id="pcLogo"></a>
+    <p id="secret">aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
+    <button id="navDrop" class="headerButtons" onclick="openNav()"><i class="fa-solid fa-align-justify"></i></button>
+    <button id="asideDrop" class="headerButtons" onclick="openAside()"><i class="fa-solid fa-briefcase"></i></button>
+</header>
+<nav id="nav">
+    <a href="index.html">HOME</a>
+    <a href="products.html">PRODUCTS</a>
+    <a href="register.html">REGISTER</a>
+    <a href="about.html">ABOUT</a>
+</nav>
+<div class="container">
+    <main class="mainRegister">
+        <h1>Registration Form</h1>
+        <p>Please complete the following form to register for an account on our website</p>
+        <div class="registration">
+            <form class="registerForm" onsubmit="submitForm()">
+                <table>
+                    <tr>
+                        <td>
+                            <label for="username">Username:</label>
+                        </td>
+                        <td>
+                            <input type="text" id="username" name="username" required="required">
+                        </td>
+                        
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="email">Email Address:</label>
+                        </td>
+                        <td>
+                            <input type="email" id="email" name="email" required="required">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <label for="password">Password:</label>
+                        </td>
+                        <td>
+                            <input type="password" id="password" name="password" required="required">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <label for="confirmPassword">Confirm Password:</label>
+                        </td>
+                        <td>
+                            <input type="password" id="confirmPassword" name="confirmPassword" required="required">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <label for="fname">First Name:</label>
+                        </td>
+                        <td>
+                            <input type="text" id="fname" name="fname" required="required">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <label for="surname">Surname:</label>
+                        </td>
+                        <td>
+                            <input type="text" id="surname" name="surname" required="required">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <label for="gender">Gender:</label>
+                        </td>
+                        <td>
+                            <select id="gender" name="gender" required="required">
+                                <option value="blank" selected></option>
+                                <option value="male">Male</option>
+                                <option value="female">Female</option>
+                                <option value="nb">Non-Binary</option>
+                            </select>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <label for="dateOfBirth">Date of Birth:</label>
+                        </td>
+                        <td>
+                            <input type="date" id="dateOfBirth" required="required">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <label for="address">Address:</label>
+                        </td>
+                        <td>
+                            <input type="text" id="address" name="address" required="required">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <label for="suburb">Suburb:</label>
+                        </td>
+                        <td>
+                            <input type="text" id="suburb" name="suburb" required="required">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <label for="postCode">Post Code:</label>
+                        </td>
+                        <td>
+                            <input type="number" id="postCode" name="postCode" required="required">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <label for="state">State:</label>
+                        </td>
+                        <td>
+                            <input type="text" id="state" name="state" required="required">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <label for="phone">Phone Number:</label>
+                        </td>
+                        <td>
+                            <input type="tel" id="phone" name="phone">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <input type="reset" id="reset" name="reset">
+                        </td>
+                        <td>
+                            <input type="submit" id="submit" name="submit">
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </main>
+    <aside id="aside">
+        <div class="asideTable">
+        <h2>Purchases</h2>
+        <table>
+            <tr>
+                <th>Item</th>
+                <th>Price (AUD)</th>
+            </tr>
+            <tr>
+                <td>
+                    Test Item 1
+                </td>
+                <td>
+                    $1000
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Test Item 2
+                </td>
+                <td>
+                    $500
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Total
+                </td>
+                <td>
+                    $1500
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <button onclick="secret()">Go to Checkout</button>
+                </td>
+            </tr>
+        </table>
+        </div>
+    </aside>
+</div>
+<footer>
+    <p>Copyright © 2022 Contoso Computers. All rights reserved</p>
+</footer>
+</body>
+</html>

@@ -1,0 +1,305 @@
+/*
+I have left this here just for you. if you wish to endure a sensory overload feel free
+
+*:hover{
+    background:linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet);
+    color:linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet);
+    font-family:comic sans ms, sans-serif;
+}
+*/
+body{
+    width:100%;
+    height:100%;
+    margin:0;
+    padding:0;
+}
+/* Header */
+header{
+    width:100%;
+    height:150px;
+    background:rgb(18 18 18);
+    z-index:100;
+    position:absolute;
+}
+header img{
+    height:130px;
+    top:10px;
+    margin:auto;
+    position:absolute;
+    z-index:0;
+}
+#mobileLogo{
+    width:330px;
+    display:none;
+}
+#pcLogo{
+    left:20px;
+}
+/* Navigation Bar */
+nav{
+    width:100%;
+    height:47px;
+    font-family: segoe ui, serif;
+    position:absolute;
+    z-index:120;
+    margin-top:150px;
+}
+nav a{
+    width:25%;
+    padding:13px 0;
+    float:left;
+    display:block;
+    text-align:center;
+    text-decoration:none;
+    background:rgb(2 112 199);
+    color:white;
+    transition:0.2s;
+    font-weight:bold;
+    z-index:10;
+}
+nav a:hover{
+    background:rgb(80 166 234);
+    text-decoration:underline;
+}
+/* Main Container */
+.container{
+    width:100%;
+    height:auto;
+    float:left;
+}
+main{
+    width:80%;
+    height:1100px;
+    float:left;
+    background:white;
+    padding:0;
+    margin:197px 0 0 0;
+    text-align:center;
+    font-family:segoe ui, serif;
+}
+.mainProducts{
+    height:2055px;
+}
+.mainRegister, .mainAbout{
+    height:682px;
+}
+.mainAbout img{
+    width:500px;
+    height:auto;
+    margin:30px 0 0 0;
+}
+main h1{
+    margin:20px 0 0 0;
+    display:block;
+}
+#secret{
+    display:none;
+    position:absolute;
+    right:20px;
+    top:0;
+    color:white;
+    font-family:"Comic Sans MS", sans-serif;
+}
+main p{
+    width:600px;
+    margin:10px auto 10px auto;
+}
+main ul{
+    width:600px;
+    margin:auto;
+    list-style-type: square;
+    list-style-position: inside;
+    text-align:left;
+}
+.products{
+    width:80%;
+    margin:auto;
+}
+.productBox{
+    width:30%;
+    height:auto;
+    float:left;
+    margin:20px 3% 20px 0;
+}
+.productBox h2{
+    padding-bottom:5px;
+}
+.productBox img{
+    width:360px;
+    height:360px;
+}
+.productBox a{
+    color:rgb(18 72 138);
+    text-decoration:none;
+    transition:0.2s;
+}
+.productBox a:hover{
+    color:rgb(2 112 199);
+    text-decoration:underline;
+}
+.rightProduct{
+    padding:0;
+}
+aside{
+    width:20%;
+    height:2020px;
+    position:fixed;
+    top:0;
+    right:0;
+    float:left;
+    background:rgb(18 72 138);
+    padding:0;
+    margin:0;
+    font-family: Segoe Ui, serif;
+    z-index:11;
+    color:white;
+}
+.asideTable{
+    width:100%;
+    height:auto;
+    margin-top:200px;
+}
+aside h2{
+    text-align:center;
+}
+aside table{
+    width:220px;
+    height:auto;
+    margin:auto auto 120px auto;
+}
+aside table td, th{
+    text-align:center;
+}
+aside button{
+    width:100%;
+    height:100%;
+}
+.registration{
+    width:600px;
+    margin:auto;
+    font-size:1.2em;
+}
+.registerForm{
+    margin-left:50px;
+}
+.registerForm label{
+    float:right;
+    font-size:1em;
+}
+.registerForm input{
+    width:230px;
+    float:right;
+    font-size:1em;
+}
+#dateOfBirth{
+    width:233px;
+}
+#submit, #reset{
+    width:238px;
+}
+.registerForm select{
+    width:238px;
+    float:right;
+    font-size:1em;
+}
+/* Footer */
+footer{
+    width:100%;
+    height:100px;
+    background:rgb(17 17 17);
+    float:left;
+    z-index:23;
+    position:relative;
+    bottom:0;
+}
+footer p{
+    text-align:center;
+    padding:40px 0 0 0;
+    margin:0;
+    font-family:segoe ui, serif;
+    color:white;
+}
+/* Mobile Specific */
+.headerButtons{
+    width:80px;
+    height:80px;
+    display:none;
+    position:absolute;
+    border:none;
+    background:black;
+    border-radius:5px;
+    top:30px;
+}
+.headerButtons i{
+    font-size:60px;
+    color:white;
+    z-index:2;
+}
+#navDrop{
+    left:20px;
+}
+#asideDrop{
+    right:20px;
+}
+/* Responsive */
+@media screen and (max-width: 600px) {
+    main, aside, nav a{
+        width: 100%;
+    }
+    main{
+        height:2900px;
+        margin-top:150px;
+    }
+    nav{
+        margin:0;
+    }
+    nav a{
+        border:none;
+        border-bottom:2px solid black;
+    }
+    aside, nav{
+        position:fixed;
+        display:none;
+        top:150px;
+        width:600px;
+        height:auto;
+        z-index:100;
+    }
+    .asideTable{
+        margin:0;
+    }
+    #navDrop, #asideDrop{
+        display:block;
+    }
+    header img{
+        left:135px;
+    }
+    #mobileLogo{
+        display:block;
+    }
+    #pcLogo{
+        display:none;
+    }
+    .products{
+        width:100%;
+        height:auto;
+        margin:auto;
+        float:left;
+    }
+    .productBox{
+        width:360px;
+        margin:20px 0 0 120px;
+    }
+    .mainProducts{
+        height:5650px;
+    }
+    .mainRegister, .mainAbout{
+        height:683px;
+    }
+    main p{
+        width:500px;
+    }
+    main ul{
+        width:500px;
+    }
+}

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Products | AT1 - Jaesa Maxwell</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="icon" href="images/favicon.png">
+        <script src="scripts.js"></script>
+        <script src="https://kit.fontawesome.com/bc5126d01f.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <header>
+            <a href="index.html"><img src="images/logo.png" alt="mobile logo" id="mobileLogo"><img src="images/logo2.png" alt="pc logo" id="pcLogo"></a>
+            <p id="secret">These just link to some of my favourite songs. Enjoy :)</p>
+            <button id="navDrop" class="headerButtons" onclick="openNav()"><i class="fa-solid fa-align-justify"></i></button>
+            <button id="asideDrop" class="headerButtons" onclick="openAside()"><i class="fa-solid fa-briefcase"></i></button>
+        </header>
+        <nav id="nav">
+            <a href="index.html">HOME</a>
+            <a href="products.html">PRODUCTS</a>
+            <a href="register.html">REGISTER</a>
+            <a href="about.html">ABOUT</a>
+        </nav>
+        <div class="container">
+            <main class="mainProducts">
+                <h1>Products We Sell</h1>
+                <p>Contoso Computers sells products in the following categories:</p>
+                <div class="products">
+                <!-- Row 1 -->
+                    <div class="productBox" id="computers">
+                        <a href="https://www.youtube.com/watch?v=Z3zUGj8LjrU" target="_blank">
+                            <img src="images/productAudio.jpg" alt="Audio">
+                            <h2>Audio</h2>
+                        </a>
+                    </div>
+                    <div class="productBox">
+                        <a href="https://www.youtube.com/watch?v=b6wSf8sJuFE" target="_blank">
+                            <img src="images/productComputer.jpg" alt="Computers">
+                            <h2>Computers</h2>
+                        </a>
+                    </div>
+                    <div class="productBox rightProduct">
+                        <a href="https://www.youtube.com/watch?v=EhUeMz0crCw" target="_blank">
+                            <img src="images/productGraphicsCards.jpg" alt="Graphics Cards">
+                            <h2>Graphics Cards</h2>
+                        </a>
+                    </div>
+
+                <!-- Row 2 -->
+                    <div class="productBox">
+                        <a href="https://www.youtube.com/watch?v=kIrfG_TBtUo" target="_blank">
+                            <img src="images/productKeyboard.jpg" alt="Keyboards & Mice">
+                            <h2>Keyboards & Mice</h2>
+                        </a>
+                    </div>
+                    <div class="productBox" id="laptops">
+                        <a href="https://www.youtube.com/watch?v=Om8pMa94wMw" target="_blank">
+                            <img src="images/productLaptop.jpg" alt="Laptops">
+                            <h2>Laptops</h2>
+                        </a>
+                    </div>
+                    <div class="productBox rightProduct" id="monitors">
+                        <a href="https://www.youtube.com/watch?v=ZyBl3noTNSs" target="_blank">
+                            <img src="images/productMonitor.jpg" alt="Monitors">
+                            <h2>Monitors</h2>
+                        </a>
+                    </div>
+                <!-- Row 3 -->
+                    <div class="productBox">
+                        <a href="https://www.youtube.com/watch?v=s7YrfMJMNGg" target="_blank">
+                            <img src="images/productNetworking.jpg" alt="Networking">
+                            <h2>Networking</h2>
+                        </a>
+                    </div>
+                    <div class="productBox">
+                        <a href="https://www.youtube.com/watch?v=n4X0CG11Byw" target="_blank">
+                            <img src="images/productPeripherals.jpg" alt="Peripherals">
+                            <h2>Peripherals</h2>
+                        </a>
+                    </div>
+                    <div class="productBox rightProduct" id="printers">
+                        <a href="https://www.youtube.com/watch?v=m0Bf68wZ1w8" target="_blank">
+                            <img src="images/productPrinter.jpg" alt="Printers">
+                            <h2>Printers</h2>
+                        </a>
+                    </div>
+                <!-- Row 4 -->
+                    <div class="productBox" id="software">
+                        <a href="https://www.youtube.com/watch?v=In2cqDZnrJs" target="_blank">
+                            <img src="images/productSoftware.jpg" alt="Software">
+                            <h2>Software</h2>
+                        </a>
+                    </div>
+                    <div class="productBox">
+                        <a href="https://www.youtube.com/watch?v=gJoK4-haOVI" target="_blank">
+                            <img src="images/productStorage.jpg" alt="Storage">
+                            <h2>Storage</h2>
+                        </a>
+                    </div>
+                    <div class="productBox rightProduct" id="tablets">
+                        <a href="https://www.youtube.com/watch?v=LjLwzFBnxk0" target="_blank">
+                            <img src="images/productTablet.jpg" alt="Tablets">
+                            <h2>Tablets</h2>
+                        </a>
+                    </div>
+                </div>
+            </main>
+            <aside id="aside">
+                <div class="asideTable">
+                    <h2>Purchases</h2>
+                        <table>
+                            <tr>
+                                <th>Item</th>
+                                <th>Price (AUD)</th>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Test Item 1
+                                </td>
+                                <td>
+                                    $1000
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Test Item 2
+                                </td>
+                                <td>
+                                    $500
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Total
+                                </td>
+                                <td>
+                                    $1500
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">
+                                    <button onclick="secret()">Go to Checkout</button>
+                                </td>
+                            </tr>
+                        </table>
+                </div>
+            </aside>
+        </div>
+        <footer>
+            <p>Copyright © 2022 Contoso Computers. All rights reserved</p>
+        </footer>
+    </body>
+</html>
