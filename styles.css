@@ -81,7 +81,7 @@ main{
     height:2055px;
 }
 .mainRegister, .mainAbout{
-    height:682px;
+    height:650px;
 }
 .mainAbout img{
     width:500px;
@@ -215,7 +215,7 @@ footer{
 footer p{
     text-align:center;
     padding:40px 0 0 0;
-    margin:0;
+    margin:auto;
     font-family:segoe ui, serif;
     color:white;
 }
